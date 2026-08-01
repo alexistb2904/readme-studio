@@ -101,6 +101,10 @@ function normalizeProject(rawProject) {
 }
 
 function setDocumentMetadata(pathname, language) {
+	const basePath = import.meta.env.BASE_URL.endsWith("/")
+		? import.meta.env.BASE_URL.slice(0, -1)
+		: import.meta.env.BASE_URL;
+	const publicPath = `${basePath}${pathname}`;
 	const isProjects = pathname === "/projects";
 	const isEditor = pathname.startsWith("/projects/");
 	const page = isEditor
@@ -128,7 +132,7 @@ function setDocumentMetadata(pathname, language) {
 		canonical.setAttribute("rel", "canonical");
 		document.head.appendChild(canonical);
 	}
-	canonical.setAttribute("href", `${window.location.origin}${pathname}`);
+	canonical.setAttribute("href", `${window.location.origin}${publicPath}`);
 }
 
 function RouteLoading({ language }) {

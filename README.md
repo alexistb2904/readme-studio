@@ -96,7 +96,7 @@ npm run build
 npm run preview
 ```
 
-The generated `dist/` directory can be served by a static host. The app uses `base: './'` hosts must also redirect client-side routes to `index.html` for direct navigation to `/projects/...` URLs.
+The generated `dist/` directory can be served by a static host. The production build targets this repository's GitHub Pages project URL (`/readme-studio/`), so its assets and in-app routes stay under that prefix. Hosts must still redirect client-side routes to `index.html` for direct navigation to `/readme-studio/projects/...` URLs.
 
 ## License
 

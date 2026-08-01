@@ -3,6 +3,8 @@
 # README Studio
 
 **Build a GitHub profile README that feels like you - visually, locally, and without an account.**
+<img width="1901" height="905" alt="image" src="https://github.com/user-attachments/assets/88c74ce4-ed27-4a2f-9268-b7810a212259" />
+<img width="1908" height="904" alt="image" src="https://github.com/user-attachments/assets/229ec399-8f3b-4905-96c6-7d2f658a547f" />
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vite.dev/)

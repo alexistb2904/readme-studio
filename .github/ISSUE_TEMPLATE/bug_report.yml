@@ -1,0 +1,75 @@
+name: Bug report
+description: Report a reproducible problem in README Studio
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve README Studio. Do not include tokens, private profile exports, or personal data.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I can reproduce this on the latest version.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+      placeholder: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Open ...
+        2. Add ...
+        3. Click ...
+        4. Observe ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Home and projects
+        - Onboarding
+        - Component palette or canvas
+        - Inspector
+        - Markdown generation
+        - Preview
+        - Import or export
+        - Translations
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Firefox 145, Chrome 140, Safari 19…
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11, macOS 26, Ubuntu 24.04…
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional context
+      description: Add sanitized logs, screenshots, or a minimal exported configuration if useful.

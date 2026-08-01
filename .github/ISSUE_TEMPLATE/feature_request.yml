@@ -1,0 +1,48 @@
+name: Feature request
+description: Propose a focused improvement or new component
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find the same proposal.
+          required: true
+        - label: This proposal is compatible with a local-first application.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What user need would this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the desired behavior and user flow.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Generated Markdown example
+      description: If this adds a README component, show the expected GitHub-compatible output.
+      render: markdown
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches or workarounds did you consider?
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Would you like to contribute this change?
+      options:
+        - "Yes"
+        - "Maybe, with guidance"
+        - "No"

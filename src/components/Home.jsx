@@ -10,7 +10,6 @@ import {
 	ExternalLink,
 	Eye,
 	FileDown,
-	Github,
 	Heart,
 	Languages,
 	Layers3,
@@ -22,6 +21,7 @@ import {
 	Terminal,
 	WandSparkles,
 } from "lucide-react";
+import { FaGithub as Github } from "react-icons/fa";
 import { t } from "../i18n.js";
 import { buyMeACoffeeUrl } from "../lib/siteConfig.js";
 

@@ -476,7 +476,7 @@ function renderWork(block, project) {
 		(clean(current.role) || clean(current.company))
 	) {
 		rows.push(
-			`- **${safeText(current.role || "Current role")}**${clean(current.company) ? ` — ${safeText(current.company)}` : ""}${clean(current.availability) ? ` · ${safeText(current.availability)}` : ""}`,
+			`- **${safeText(current.role || "Current role")}**${clean(current.company) ? ` - ${safeText(current.company)}` : ""}${clean(current.availability) ? ` · ${safeText(current.availability)}` : ""}`,
 		);
 	}
 	for (const item of items) {
@@ -484,7 +484,7 @@ function renderWork(block, project) {
 			clean(item.companyUrl) && clean(item.company)
 				? `[${safeText(item.company)}](${clean(item.companyUrl)})`
 				: safeText(item.company);
-		const summary = `- **${safeText(item.role)}**${clean(item.company) ? ` — ${company}` : ""}${clean(item.period) ? ` · ${safeText(item.period)}` : ""}${clean(item.location) ? ` · ${safeText(item.location)}` : ""}`;
+		const summary = `- **${safeText(item.role)}**${clean(item.company) ? ` - ${company}` : ""}${clean(item.period) ? ` · ${safeText(item.period)}` : ""}${clean(item.location) ? ` · ${safeText(item.location)}` : ""}`;
 		rows.push(
 			`${summary}${clean(item.description) ? `\n  - ${safeText(item.description)}` : ""}`,
 		);
@@ -972,7 +972,7 @@ function renderSupport(block, project) {
 
 function renderQuote(block) {
 	const author = clean(block.props.author)
-		? `\n> — ${safeText(block.props.author)}`
+		? `\n> - ${safeText(block.props.author)}`
 		: "";
 	return `> ${safeText(block.props.text)}${author}`;
 }

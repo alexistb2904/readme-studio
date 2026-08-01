@@ -9,7 +9,6 @@ import {
 	Columns3,
 	Contact,
 	FolderGit2,
-	Github,
 	GripVertical,
 	Heading1,
 	HeartHandshake,
@@ -28,6 +27,7 @@ import {
 	Timer,
 	Type,
 } from "lucide-react";
+import { FaGithub as Github } from "react-icons/fa";
 import { componentDefinitions } from "../data/templates.js";
 import { t } from "../i18n.js";
 

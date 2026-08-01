@@ -4,10 +4,10 @@ import {
 	Clock3,
 	FileText,
 	FolderGit2,
-	Github,
 	Plus,
 	Trash2,
 } from "lucide-react";
+import { FaGithub as Github } from "react-icons/fa";
 import { t } from "../i18n.js";
 
 function formatDate(value, language) {

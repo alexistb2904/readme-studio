@@ -1,11 +1,11 @@
 import {
 	ArrowLeft,
 	FileDown,
-	Github,
 	Import,
 	LayoutTemplate,
 	Settings,
 } from "lucide-react";
+import { FaGithub as Github } from "react-icons/fa";
 import { t } from "../i18n.js";
 
 export default function Topbar({

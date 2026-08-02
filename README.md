@@ -96,7 +96,7 @@ npm run build
 npm run preview
 ```
 
-The generated `dist/` directory can be served by a static host. The production build targets this repository's GitHub Pages project URL (`/readme-studio/`), so its assets and in-app routes stay under that prefix. Its `404.html` restores direct GitHub Pages visits to client-side routes such as `/readme-studio/projects`.
+The generated `dist/` directory can be served by a static host. The production build targets the custom domain root (`readme.alexistb.com`), so its assets and in-app routes start at `/`. Its `404.html` restores direct GitHub Pages visits to client-side routes such as `/projects`.
 
 ## License
 

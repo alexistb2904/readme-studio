@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="noindex" />
-    <title>Redirecting…</title>
-    <script>
-      // GitHub Pages cannot rewrite unknown paths to index.html. Keep the requested
-      // URL in query parameters, then let index.html restore it before React starts.
-      (() => {
-        const basePath = "/";
-        const params = new URLSearchParams({
-          ghPagesPath: window.location.pathname.slice(basePath.length) || "/",
-          ghPagesSearch: window.location.search,
-          ghPagesHash: window.location.hash,
-        });
 
-        window.location.replace(`${basePath}/?${params.toString()}`);
-      })();
-    </script>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex" />
+  <title>Redirecting…</title>
+  <script>
+    (() => {
+      const params = new URLSearchParams({
+        ghPagesPath: window.location.pathname || "/",
+        ghPagesSearch: window.location.search,
+        ghPagesHash: window.location.hash,
+      });
+
+      window.location.replace(`/?${params.toString()}`);
+    })();
+  </script>
+</head>
+
+<body></body>
+
 </html>

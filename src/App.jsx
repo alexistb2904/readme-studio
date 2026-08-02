@@ -19,6 +19,7 @@ import {
 	saveProjects,
 	saveTemplates,
 } from "./lib/storage.js";
+import { siteUrl } from "./lib/siteConfig.js";
 import Builder from "./components/Builder.jsx";
 import AppFooter from "./components/AppFooter.jsx";
 import Credits from "./components/Credits.jsx";
@@ -120,19 +121,33 @@ function setDocumentMetadata(pathname, language) {
 			: {
 					title: t(language, "metadata.homeTitle"),
 					description: t(language, "metadata.homeDescription"),
-				};
+			};
+	const isPublicPage = pathname === "/";
+	const canonicalUrl = `${siteUrl}${publicPath}`;
+	const robotsContent = isPublicPage
+		? "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+		: "noindex,nofollow,noarchive";
+	const setMeta = (selector, attribute, value) => {
+		const element = document.querySelector(selector);
+		if (element) element.setAttribute(attribute, value);
+	};
 
 	document.documentElement.lang = language;
 	document.title = page.title;
-	const description = document.querySelector('meta[name="description"]');
-	if (description) description.setAttribute("content", page.description);
+	setMeta('meta[name="description"]', "content", page.description);
+	setMeta('meta[name="robots"]', "content", robotsContent);
+	setMeta('meta[property="og:title"]', "content", page.title);
+	setMeta('meta[property="og:description"]', "content", page.description);
+	setMeta('meta[property="og:url"]', "content", canonicalUrl);
+	setMeta('meta[name="twitter:title"]', "content", page.title);
+	setMeta('meta[name="twitter:description"]', "content", page.description);
 	let canonical = document.querySelector('link[rel="canonical"]');
 	if (!canonical) {
 		canonical = document.createElement("link");
 		canonical.setAttribute("rel", "canonical");
 		document.head.appendChild(canonical);
 	}
-	canonical.setAttribute("href", `${window.location.origin}${publicPath}`);
+	canonical.setAttribute("href", canonicalUrl);
 }
 
 function RouteLoading({ language }) {

@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
 
 	return {
 		plugins: [react()],
-		base: "/readme-studio/",
+		base: "/",
 		define: {
 			"import.meta.env.VITE_BUYMEACOFFEE_URL": JSON.stringify(buyMeACoffeeUrl),
 		},

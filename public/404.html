@@ -8,7 +8,7 @@
       // GitHub Pages cannot rewrite unknown paths to index.html. Keep the requested
       // URL in query parameters, then let index.html restore it before React starts.
       (() => {
-        const basePath = "/readme-studio";
+        const basePath = "/";
         const params = new URLSearchParams({
           ghPagesPath: window.location.pathname.slice(basePath.length) || "/",
           ghPagesSearch: window.location.search,

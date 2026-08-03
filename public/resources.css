@@ -110,6 +110,7 @@ li {
   font-size: 19px;
 }
 .hero img {
+  height: auto;
   width: 100%;
   border: 1px solid rgba(145, 183, 231, 0.35);
   border-radius: 6px;

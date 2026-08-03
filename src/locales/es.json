@@ -120,9 +120,9 @@
 		"projects": "Mis proyectos",
 		"launch": "Crear un README",
 		"heroTag": "Un taller para tu presencia en GitHub",
-		"heroTitleStart": "Un README que",
-		"heroTitleAccent": "se parece a ti.",
-		"heroText": "Compón una página de GitHub clara, viva y única. README Studio convierte tus ideas en Markdown limpio sin pelearte con la sintaxis.",
+		"heroTitleStart": "Generador de README",
+		"heroTitleAccent": "para GitHub.",
+		"heroText": "Crea visualmente un README de perfil de GitHub cuidado. Empieza con una plantilla, adapta cada bloque y exporta Markdown limpio sin pelearte con la sintaxis.",
 		"primary": "Empezar gratis",
 		"secondary": "Ver mis proyectos",
 		"proof": "Sin cuenta · Guardado en tu navegador",
@@ -162,6 +162,51 @@
 		"endText": "Tu próximo README está a unos pocos bloques.",
 		"endAction": "Crear mi README",
 		"footer": "Pensado para perfiles de GitHub que tienen algo que decir.",
+		"guideTag": "Un creador de README GitHub práctico",
+		"guideTitle": "Crea un README de perfil de GitHub sin escribir Markdown a mano.",
+		"guideIntro": "README Studio es un generador visual gratuito de README para GitHub destinado a desarrolladores que quieren un perfil claro, personal y listo para publicar. Tu trabajo permanece en el navegador hasta que lo exportas.",
+		"guideSteps": [
+			[
+				"Elige un punto de partida",
+				"Abre un proyecto vacío o empieza con una plantilla de README de perfil diseñada para una presentación de desarrollador clara."
+			],
+			[
+				"Construye tu perfil visualmente",
+				"Añade y reordena tu biografía, tecnologías, proyectos, enlaces, insignias y estadísticas de GitHub con una vista previa de Markdown en directo."
+			],
+			[
+				"Exporta para GitHub",
+				"Copia el Markdown generado o descarga README.md y publícalo en el repositorio que lleva tu nombre de usuario de GitHub."
+			]
+		],
+		"guideBenefitsTitle": "Pensado para un resultado listo para GitHub",
+		"guideBenefitsText": "El editor reúne las piezas que suelen necesitar los desarrolladores para un README de perfil y mantiene el archivo final portátil y editable.",
+		"guideBenefits": [
+			"Gratis y sin necesidad de cuenta",
+			"Vista previa al estilo de GitHub antes de publicar",
+			"Plantillas, temas, insignias e iconos de tecnologías",
+			"Markdown que puedes editar y reutilizar"
+		],
+		"resourcesTitle": "Recursos de README para GitHub",
+		"profileGuideLabel": "Guía práctica",
+		"profileGuideTitle": "Cómo crear un README de perfil de GitHub",
+		"templatesGuideLabel": "Ideas de plantillas",
+		"templatesGuideTitle": "Explorar plantillas de README de perfil de GitHub",
+		"faqTitle": "Preguntas frecuentes sobre el generador de README GitHub",
+		"faqs": [
+			[
+				"¿Qué es un README de perfil de GitHub?",
+				"Es el archivo README.md de un repositorio público cuyo nombre coincide con tu usuario de GitHub. GitHub lo muestra en la parte superior de tu perfil."
+			],
+			[
+				"¿README Studio es gratis?",
+				"Sí. README Studio funciona en el navegador y no exige una cuenta para crear, previsualizar o exportar un README."
+			],
+			[
+				"¿Puedo editar el README generado más adelante?",
+				"Sí. El README.md exportado es Markdown normal y HTML compatible con GitHub, por lo que puedes editarlo en GitHub o en cualquier editor de código."
+			]
+		],
 		"credits": "Créditos",
 		"markdown": "Markdown",
 		"preview": "Vista previa",
@@ -591,8 +636,8 @@
 		"editorDescription": "Edita y exporta localmente un README listo para GitHub.",
 		"projectsTitle": "Mis proyectos README · README Studio",
 		"projectsDescription": "Abre, organiza y exporta tus proyectos README locales para GitHub.",
-		"homeTitle": "README Studio · Crea un README que se parezca a ti",
-		"homeDescription": "Un editor visual local para perfiles README de GitHub cuidados."
+		"homeTitle": "Generador de README GitHub | README Studio",
+		"homeDescription": "Crea, previsualiza y exporta un README de perfil de GitHub cuidado con un generador visual gratuito. Elige una plantilla, edita los bloques y descarga Markdown limpio."
 	},
 	"avatarAlt": "Avatar de GitHub de alexistb2904",
 	"paletteGroups": {

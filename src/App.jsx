@@ -19,7 +19,7 @@ import {
 	saveProjects,
 	saveTemplates,
 } from "./lib/storage.js";
-import { siteUrl } from "./lib/siteConfig.js";
+import { siteUrl, socialImageUrl } from "./lib/siteConfig.js";
 import Builder from "./components/Builder.jsx";
 import AppFooter from "./components/AppFooter.jsx";
 import Credits from "./components/Credits.jsx";
@@ -27,6 +27,7 @@ import Home from "./components/Home.jsx";
 import Modal from "./components/Modal.jsx";
 import Onboarding from "./components/Onboarding.jsx";
 import Projects from "./components/Projects.jsx";
+import ResourcePage from "./components/ResourcePage.jsx";
 import SettingsPanel from "./components/SettingsPanel.jsx";
 import TemplateManager from "./components/TemplateManager.jsx";
 import Topbar from "./components/Topbar.jsx";
@@ -102,13 +103,28 @@ function normalizeProject(rawProject) {
 }
 
 function setDocumentMetadata(pathname, language) {
+	const normalizedPathname =
+		pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
+	const resourcePages = {
+		"/github-profile-readme": {
+			title: "How to Create a GitHub Profile README | README Studio",
+			description:
+				"Learn how to create a GitHub profile README, choose what to include and export a clean README.md with a free visual builder.",
+		},
+		"/github-readme-templates": {
+			title: "GitHub Profile README Templates | README Studio",
+			description:
+				"Explore practical GitHub profile README templates for developers. Start with a clear structure, customize it visually and export clean Markdown for free.",
+		},
+	};
+	const resourcePage = resourcePages[normalizedPathname];
 	const basePath = import.meta.env.BASE_URL.endsWith("/")
 		? import.meta.env.BASE_URL.slice(0, -1)
 		: import.meta.env.BASE_URL;
 	const publicPath = `${basePath}${pathname}`;
-	const isProjects = pathname === "/projects";
-	const isEditor = pathname.startsWith("/projects/");
-	const page = isEditor
+	const isProjects = normalizedPathname === "/projects";
+	const isEditor = normalizedPathname.startsWith("/projects/");
+	const page = resourcePage || (isEditor
 		? {
 				title: t(language, "metadata.editorTitle"),
 				description: t(language, "metadata.editorDescription"),
@@ -118,11 +134,11 @@ function setDocumentMetadata(pathname, language) {
 					title: t(language, "metadata.projectsTitle"),
 					description: t(language, "metadata.projectsDescription"),
 				}
-			: {
-					title: t(language, "metadata.homeTitle"),
-					description: t(language, "metadata.homeDescription"),
-			};
-	const isPublicPage = pathname === "/";
+		: {
+				title: t(language, "metadata.homeTitle"),
+				description: t(language, "metadata.homeDescription"),
+			});
+	const isPublicPage = normalizedPathname === "/" || Boolean(resourcePage);
 	const canonicalUrl = `${siteUrl}${publicPath}`;
 	const robotsContent = isPublicPage
 		? "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
@@ -132,15 +148,22 @@ function setDocumentMetadata(pathname, language) {
 		if (element) element.setAttribute(attribute, value);
 	};
 
-	document.documentElement.lang = language;
+	document.documentElement.lang = resourcePage ? "en" : language;
 	document.title = page.title;
 	setMeta('meta[name="description"]', "content", page.description);
 	setMeta('meta[name="robots"]', "content", robotsContent);
 	setMeta('meta[property="og:title"]', "content", page.title);
 	setMeta('meta[property="og:description"]', "content", page.description);
+	setMeta(
+		'meta[property="og:type"]',
+		"content",
+		normalizedPathname === "/github-profile-readme" ? "article" : "website",
+	);
 	setMeta('meta[property="og:url"]', "content", canonicalUrl);
+	setMeta('meta[property="og:image"]', "content", socialImageUrl);
 	setMeta('meta[name="twitter:title"]', "content", page.title);
 	setMeta('meta[name="twitter:description"]', "content", page.description);
+	setMeta('meta[name="twitter:image"]', "content", socialImageUrl);
 	let canonical = document.querySelector('link[rel="canonical"]');
 	if (!canonical) {
 		canonical = document.createElement("link");
@@ -721,6 +744,14 @@ export default function App() {
 						{...workspaceProps}
 					/>
 				}
+			/>
+			<Route
+				path="/github-profile-readme/*"
+				element={<ResourcePage resource="github-profile-readme" />}
+			/>
+			<Route
+				path="/github-readme-templates/*"
+				element={<ResourcePage resource="github-readme-templates" />}
 			/>
 			<Route path="*" element={<Navigate to="/" replace />} />
 		</Routes>

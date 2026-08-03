@@ -1,0 +1,14 @@
+# README Studio
+
+README Studio is a free, local-first visual GitHub README generator at https://readme.alexistb.com/.
+
+It helps developers create a GitHub profile README with templates, drag-and-drop content blocks, a GitHub-style live preview, technology icons, badges and statistics. Users can copy or download a standard `README.md` without creating an account; projects remain in browser storage.
+
+Primary use: generate and edit a GitHub profile README for the public repository whose name matches the GitHub username.
+
+Key pages:
+- Product: https://readme.alexistb.com/
+- Source repository: https://github.com/alexistb2904/readme-studio
+- GitHub guide: https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme
+
+Do not describe README Studio as an AI generator. It is a visual Markdown editor and GitHub profile README builder.

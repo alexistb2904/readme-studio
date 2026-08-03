@@ -8,7 +8,8 @@
   <meta name="color-scheme" content="dark" />
   <meta name="application-name" content="README Studio" />
   <meta name="author" content="Alexis Thierry-Bellefond" />
-  <meta name="description" content="A local-first visual editor for thoughtful, GitHub-ready README profiles." />
+  <meta name="description"
+    content="Create, preview and export a polished GitHub profile README with a free visual README generator. Choose templates, edit blocks and download clean Markdown." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://readme.alexistb.com/" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -16,22 +17,40 @@
   <meta property="og:site_name" content="README Studio" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://readme.alexistb.com/" />
-  <meta property="og:title" content="README Studio · Build a GitHub README that feels like you" />
-  <meta property="og:description" content="A local-first visual editor for thoughtful, GitHub-ready README profiles." />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="README Studio · Build a GitHub README that feels like you" />
-  <meta name="twitter:description" content="A local-first visual editor for thoughtful, GitHub-ready README profiles." />
+  <meta property="og:title" content="GitHub README Generator | README Studio" />
+  <meta property="og:description" content="Create, preview and export a polished GitHub profile README with a free visual README generator." />
+  <meta property="og:image" content="https://readme.alexistb.com/og-readme-studio.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="README Studio visual GitHub README generator" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GitHub README Generator | README Studio" />
+  <meta name="twitter:description" content="Create, preview and export a polished GitHub profile README with a free visual README generator." />
+  <meta name="twitter:image" content="https://readme.alexistb.com/og-readme-studio.png" />
+  <meta name="twitter:image:alt" content="README Studio visual GitHub README generator" />
+  <link rel="manifest" href="/site.webmanifest" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "README Studio",
       "url": "https://readme.alexistb.com/",
-      "description": "A local-first visual editor for creating polished, GitHub-ready README profiles.",
+      "description": "A free visual GitHub README generator for creating, previewing and exporting polished profile README files.",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Web",
       "browserRequirements": "Requires JavaScript and a modern web browser",
       "isAccessibleForFree": true,
+      "inLanguage": ["en", "fr", "es"],
+      "screenshot": "https://readme.alexistb.com/og-readme-studio.png",
+      "featureList": [
+        "Visual drag-and-drop README editor",
+        "GitHub-style live Markdown preview",
+        "Profile README templates and technology badges",
+        "Local browser storage with no account required",
+        "Export to GitHub-ready README.md"
+      ],
+      "sameAs": "https://github.com/alexistb2904/readme-studio",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -41,6 +60,38 @@
         "@type": "Person",
         "name": "Alexis Thierry-Bellefond"
       }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a GitHub profile README?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the README.md file from a public repository whose name matches your GitHub username. GitHub displays it at the top of your profile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is README Studio free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. README Studio runs in your browser and does not require an account to create, preview or export a README."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I edit the generated README later?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The exported README.md is regular Markdown and GitHub-supported HTML, so you can edit it in GitHub or any code editor."
+          }
+        }
+      ]
     }
   </script>
   <script>
@@ -58,11 +109,25 @@
       window.history.replaceState(null, "", `${basePath}${normalizedPath}${search}${hash}`);
     })();
   </script>
-  <title>README Studio · Build a GitHub README that feels like you</title>
+  <title>GitHub README Generator | README Studio</title>
 </head>
 
 <body>
   <div id="root"></div>
+  <noscript>
+    <main>
+      <h1>Free GitHub README Generator</h1>
+      <p>README Studio is a free visual editor for creating a GitHub profile README. Choose a template, edit your content, preview the Markdown and export a GitHub-ready README.md
+        without an account.</p>
+      <h2>Create a GitHub profile README in three steps</h2>
+      <ol>
+        <li>Start a free README project and choose a profile template.</li>
+        <li>Add your bio, skills, projects, badges and GitHub statistics.</li>
+        <li>Preview the result, then copy or download your README.md.</li>
+      </ol>
+      <p>You see this message because your browser does not support JavaScript or it is disabled. README Studio requires JavaScript to run.</p>
+    </main>
+  </noscript>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

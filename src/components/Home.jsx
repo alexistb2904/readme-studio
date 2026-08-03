@@ -276,6 +276,72 @@ export default function Home({
 				</div>
 			</section>
 
+			<section
+				className="landing-seo-content container-width"
+				aria-labelledby="readme-generator-guide"
+			>
+				<div className="landing-section-heading">
+					<p className="landing-overline">
+						<span /> {text.guideTag}
+					</p>
+					<h2 id="readme-generator-guide">{text.guideTitle}</h2>
+					<p>{text.guideIntro}</p>
+				</div>
+				<div className="landing-guide-grid">
+					<ol className="landing-guide-steps">
+						{text.guideSteps.map(([title, description], index) => (
+							<li key={title}>
+								<span>0{index + 1}</span>
+								<div>
+									<h3>{title}</h3>
+									<p>{description}</p>
+								</div>
+							</li>
+						))}
+					</ol>
+					<div className="landing-guide-benefits">
+						<h3>{text.guideBenefitsTitle}</h3>
+						<p>{text.guideBenefitsText}</p>
+						<ul>
+							{text.guideBenefits.map((benefit) => (
+								<li key={benefit}>
+									<Check size={16} aria-hidden="true" />
+									{benefit}
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+				<nav
+					className="landing-resource-links"
+					aria-label={text.resourcesTitle}
+				>
+					<a href="/github-profile-readme/">
+						<span>{text.profileGuideLabel}</span>
+						<strong>
+							{text.profileGuideTitle}{" "}
+							<ArrowRight size={16} aria-hidden="true" />
+						</strong>
+					</a>
+					<a href="/github-readme-templates/">
+						<span>{text.templatesGuideLabel}</span>
+						<strong>
+							{text.templatesGuideTitle}{" "}
+							<ArrowRight size={16} aria-hidden="true" />
+						</strong>
+					</a>
+				</nav>
+				<div className="landing-faq" aria-label={text.faqTitle}>
+					<h2>{text.faqTitle}</h2>
+					{text.faqs.map(([question, answer]) => (
+						<details key={question}>
+							<summary>{question}</summary>
+							<p>{answer}</p>
+						</details>
+					))}
+				</div>
+			</section>
+
 			<section className="landing-final container-width">
 				<div>
 					<p className="landing-overline">

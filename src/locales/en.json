@@ -120,9 +120,9 @@
 		"projects": "My projects",
 		"launch": "Create a README",
 		"heroTag": "A workshop for your GitHub presence",
-		"heroTitleStart": "A README that",
-		"heroTitleAccent": "feels like you.",
-		"heroText": "Compose a clear, lively and unmistakably yours GitHub page. README Studio turns your ideas into clean Markdown without making you wrestle with syntax.",
+		"heroTitleStart": "GitHub README",
+		"heroTitleAccent": "generator.",
+		"heroText": "Create a polished GitHub profile README visually. Start with a template, tailor each block and export clean Markdown without wrestling with syntax.",
 		"primary": "Start for free",
 		"secondary": "See my projects",
 		"proof": "No account needed · Saved in your browser",
@@ -162,6 +162,51 @@
 		"endText": "Your next README is only a few blocks away.",
 		"endAction": "Create my README",
 		"footer": "Built for GitHub profiles with something to say.",
+		"guideTag": "A practical GitHub README builder",
+		"guideTitle": "Create a GitHub profile README without hand-writing Markdown.",
+		"guideIntro": "README Studio is a free visual GitHub README generator for developers who want a profile that is clear, personal and ready to publish. Your work stays in your browser until you export it.",
+		"guideSteps": [
+			[
+				"Choose a starting point",
+				"Open a blank project or begin with a profile README template designed around a clear developer introduction."
+			],
+			[
+				"Build your profile visually",
+				"Add and reorder your bio, tech stack, projects, links, badges and GitHub statistics with a live Markdown preview."
+			],
+			[
+				"Export for GitHub",
+				"Copy the generated Markdown or download README.md, then publish it in the repository named after your GitHub username."
+			]
+		],
+		"guideBenefitsTitle": "Made for a GitHub-ready result",
+		"guideBenefitsText": "The editor focuses on the pieces developers usually need in a profile README, while keeping the final file portable and editable.",
+		"guideBenefits": [
+			"Free to use with no account required",
+			"GitHub-style preview before you publish",
+			"Templates, themes, badges and technology icons",
+			"Markdown stays yours to edit and reuse"
+		],
+		"resourcesTitle": "GitHub README resources",
+		"profileGuideLabel": "Practical guide",
+		"profileGuideTitle": "How to create a GitHub profile README",
+		"templatesGuideLabel": "Template ideas",
+		"templatesGuideTitle": "Browse GitHub profile README templates",
+		"faqTitle": "GitHub README generator FAQ",
+		"faqs": [
+			[
+				"What is a GitHub profile README?",
+				"It is the README.md file from a public repository whose name matches your GitHub username. GitHub displays it at the top of your profile."
+			],
+			[
+				"Is README Studio free?",
+				"Yes. README Studio runs in your browser and does not require an account to create, preview or export a README."
+			],
+			[
+				"Can I edit the generated README later?",
+				"Yes. The exported README.md is regular Markdown and GitHub-supported HTML, so you can edit it in GitHub or any code editor."
+			]
+		],
 		"credits": "Credits",
 		"markdown": "Markdown",
 		"preview": "Preview",
@@ -591,8 +636,8 @@
 		"editorDescription": "Edit and export a GitHub-ready README locally.",
 		"projectsTitle": "My README projects · README Studio",
 		"projectsDescription": "Open, organize and export your local GitHub README projects.",
-		"homeTitle": "README Studio · Build a GitHub README that feels like you",
-		"homeDescription": "A local-first visual editor for thoughtful, GitHub-ready README profiles."
+		"homeTitle": "GitHub README Generator | README Studio",
+		"homeDescription": "Create, preview and export a polished GitHub profile README with a free visual README generator. Choose templates, edit blocks and download clean Markdown."
 	},
 	"avatarAlt": "GitHub avatar of alexistb2904",
 	"paletteGroups": {

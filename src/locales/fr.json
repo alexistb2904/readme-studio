@@ -120,9 +120,9 @@
 		"projects": "Mes projets",
 		"launch": "Créer un README",
 		"heroTag": "Un atelier pour votre présence GitHub",
-		"heroTitleStart": "Un README qui",
-		"heroTitleAccent": "vous ressemble.",
-		"heroText": "Composez une page GitHub claire, vivante et unique. README Studio transforme vos idées en Markdown propre, sans vous perdre dans la syntaxe.",
+		"heroTitleStart": "Générateur de README",
+		"heroTitleAccent": "pour GitHub.",
+		"heroText": "Créez visuellement un README de profil GitHub soigné. Partez d’un modèle, personnalisez chaque bloc et exportez du Markdown propre sans vous perdre dans la syntaxe.",
 		"primary": "Commencer gratuitement",
 		"secondary": "Voir mes projets",
 		"proof": "Aucun compte requis · Sauvegardé dans votre navigateur",
@@ -162,6 +162,51 @@
 		"endText": "Votre prochain README est à quelques blocs de distance.",
 		"endAction": "Créer mon README",
 		"footer": "Conçu pour les profils GitHub qui ont quelque chose à dire.",
+		"guideTag": "Un créateur de README GitHub concret",
+		"guideTitle": "Créez un README de profil GitHub sans écrire le Markdown à la main.",
+		"guideIntro": "README Studio est un générateur visuel gratuit de README GitHub pour les développeurs qui veulent un profil clair, personnel et prêt à publier. Votre travail reste dans votre navigateur jusqu’à l’export.",
+		"guideSteps": [
+			[
+				"Choisissez un point de départ",
+				"Ouvrez un projet vide ou partez d’un modèle de README de profil conçu autour d’une présentation développeur claire."
+			],
+			[
+				"Composez votre profil visuellement",
+				"Ajoutez et réorganisez votre bio, vos technologies, projets, liens, badges et statistiques GitHub avec un aperçu Markdown en direct."
+			],
+			[
+				"Exportez pour GitHub",
+				"Copiez le Markdown généré ou téléchargez README.md, puis publiez-le dans le dépôt qui porte votre nom d’utilisateur GitHub."
+			]
+		],
+		"guideBenefitsTitle": "Pensé pour un résultat prêt pour GitHub",
+		"guideBenefitsText": "L’éditeur réunit les éléments utiles à un README de profil tout en gardant un fichier final portable et modifiable.",
+		"guideBenefits": [
+			"Gratuit, sans création de compte",
+			"Aperçu de style GitHub avant publication",
+			"Modèles, thèmes, badges et icônes de technologies",
+			"Un Markdown que vous pouvez modifier et réutiliser"
+		],
+		"resourcesTitle": "Ressources README GitHub",
+		"profileGuideLabel": "Guide pratique",
+		"profileGuideTitle": "Comment créer un README de profil GitHub",
+		"templatesGuideLabel": "Idées de modèles",
+		"templatesGuideTitle": "Découvrir des modèles de README de profil GitHub",
+		"faqTitle": "Questions fréquentes sur le générateur de README GitHub",
+		"faqs": [
+			[
+				"Qu’est-ce qu’un README de profil GitHub ?",
+				"C’est le fichier README.md d’un dépôt public qui porte le même nom que votre identifiant GitHub. GitHub l’affiche en haut de votre profil."
+			],
+			[
+				"README Studio est-il gratuit ?",
+				"Oui. README Studio fonctionne dans votre navigateur et ne demande aucun compte pour créer, prévisualiser ou exporter un README."
+			],
+			[
+				"Puis-je modifier le README généré plus tard ?",
+				"Oui. Le README.md exporté est du Markdown standard et du HTML pris en charge par GitHub ; vous pouvez le modifier dans GitHub ou votre éditeur de code."
+			]
+		],
 		"credits": "Crédits",
 		"markdown": "Markdown",
 		"preview": "Aperçu",
@@ -591,8 +636,8 @@
 		"editorDescription": "Modifiez et exportez localement un README prêt pour GitHub.",
 		"projectsTitle": "Mes projets README · README Studio",
 		"projectsDescription": "Ouvrez, organisez et exportez vos projets README GitHub locaux.",
-		"homeTitle": "README Studio · Créez un README qui vous ressemble",
-		"homeDescription": "Un éditeur visuel local pour créer des profils README GitHub soignés."
+		"homeTitle": "Générateur de README GitHub | README Studio",
+		"homeDescription": "Créez, prévisualisez et exportez un README de profil GitHub soigné avec un générateur visuel gratuit. Choisissez un modèle, éditez les blocs et téléchargez du Markdown propre."
 	},
 	"avatarAlt": "Avatar GitHub d’alexistb2904",
 	"paletteGroups": {
